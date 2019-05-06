@@ -1,7 +1,7 @@
 package com.work.test;
 
-import java.awt.List;
 import java.sql.Connection;
+import java.util.List;
 
 import com.work.entiy.Student;
 
@@ -18,14 +18,17 @@ public class Test {
 		//查询测试
 //		System.out.println(sDAO.getAllStudents());
 		//id查询测试
-//		Student student = sDAO.selectStudentbyid("stu1202");
-//		student.toString();
+//		Student student = sDAO.selectStudentbyid("4");
+//		System.out.println(student.toString());
 //		System.out.println("查询成功……");
 		//删除测试
-	//	sDAO.deleteStudent("stu1202");
-	//	System.out.println("删除成功……");
-		java.util.List<String> list=sDAO.selectCrousenamebyid("stu1108");
-	System.out.println(list);
+//		sDAO.deleteStudent("1");
+//		System.out.println("删除成功……");
+		List<String> list=sDAO.selectCrousenamebyid("stu1108");
+		System.out.println(list);
+		//查询课程名
+	
+	
 	}
 
 }

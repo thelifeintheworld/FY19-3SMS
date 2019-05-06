@@ -21,6 +21,7 @@ public class StudentM {
 	private static  Student student = null;
 	Set<Student> set = new HashSet<Student>();
 	static Scanner scanner = new Scanner(System.in); 
+	static CrouseM crouseM = new CrouseM(Studentutil.getConnection());;
 	private static Properties properties;
 	static {
 		properties = new Properties();
@@ -89,7 +90,7 @@ public class StudentM {
 			System.out.println("打印成功，系统将自动返回上层目录……");
 			break;
 		case 6:
-			CrouseM.menuc();
+			crouseM.menuc();
 			break;
 		case 7:
 			System.out.println("您选择了“退出系统”");	
